@@ -41,12 +41,12 @@ const Footer = ({ t }: any) => {
     <>
       <FooterSection>
         <Container>
-          <Row justify="space-between">
-            <Col lg={10} md={10} sm={12} xs={12}>
+        <Row justify="space-between">
+  <Col lg={8} md={10} sm={24} xs={24}>
               <Language>{t("Contact")}</Language>
               <Large to="/">{t("Tell us everything")}</Large>
               <Para>
-                {t(`Do you have any question? Feel free to reach out.`)}
+                {t(`Do you have any questions? Feel free to reach out.`)}
               </Para>
               <a href="mailto:info.dmsmoving@gmail.com">
                 <Chat>{t(`Let's Chat`)}</Chat>
@@ -55,12 +55,15 @@ const Footer = ({ t }: any) => {
                 <Chat>{t(`Or Call Us`)}</Chat>
               </a>
             </Col>
-            <Col lg={10} md={10} sm={12} xs={12}>
-              <Empty />
+            <Col lg={10} md={10} sm={24} xs={24}>
+              {/* <Empty /> */}
               <Language>{t("Address")}</Language>
               <Para>449 Avenue H, Trasure Island</Para>
               <Para>San Francisco</Para>
               <Para>California</Para>
+              <Empty />
+              <Para>Email: info.dmsmoving@gmail.com</Para>
+              <Para>Phone Number: +1 650 515-9161</Para>
             </Col>
           </Row>
         </Container>
