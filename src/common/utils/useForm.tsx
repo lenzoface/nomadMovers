@@ -18,8 +18,8 @@ export const useForm = (validate: any) => {
     event.preventDefault();
     setErrors(validate(values));
     // Your url for API
-    const url = "";
-    if (Object.keys(values).length === 3) {
+    const url = `${process.env.REACT_APP_FORMSPARK_EMAIL}`;
+    if (Object.keys(values).length >= 3) { // Проверка на заполненность как минимум 3 полей
       axios
         .post(url, {
           ...values,
@@ -35,7 +35,7 @@ export const useForm = (validate: any) => {
       setValues("");
       openNotificationWithIcon();
     }
-  }, [errors, shouldSubmit]);
+  }, [errors, shouldSubmit]); 
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     event.persist();

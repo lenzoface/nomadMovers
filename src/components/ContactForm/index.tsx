@@ -39,7 +39,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                 <Input
                   type="text"
                   name="name"
-                  placeholder="Your Name"
+                  placeholder="Your Name (required)"
                   value={values.name || ""}
                   onChange={handleChange}
                 />
@@ -49,7 +49,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                 <Input
                   type="text"
                   name="email"
-                  placeholder="Your Email"
+                  placeholder="Your Email (required)"
                   value={values.email || ""}
                   onChange={handleChange}
                 />
@@ -57,12 +57,55 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
               </Col>
               <Col span={24}>
                 <TextArea
-                  placeholder="Your Message"
-                  value={values.message || ""}
-                  name="message"
+                  placeholder="Enter any information here, such as assistance with preparing, special/heavy items, stairs/floors, etc."
+                  value={values.details || ""}
+                  name="details"
                   onChange={handleChange}
                 />
-                <ValidationType type="message" />
+                <ValidationType type="details" />
+              </Col>
+
+              <Col>
+                <Input
+                  type="tel"
+                  name="Phone Number"
+                  placeholder="Enter your Phone Number"
+                  value={values.tel || ""}
+                  onChange={handleChange}
+                />
+                <ValidationType type="tel" />
+              </Col>
+
+              <Col span={24}>
+                <Input
+                  type="date"
+                  name="date"
+                  placeholder="Preferred Date"
+                  value={values.date || ""}
+                  onChange={handleChange}
+                />
+                <ValidationType type="date" />
+              </Col>
+              <Col span={24}>
+                <Input
+                  type="text"
+                  name="In what location do you need the service?"
+                  placeholder="Pick Up Address"
+                  value={values.pickup || ""}
+                  onChange={handleChange}
+                />
+                <ValidationType type="pickup" />
+              </Col>
+
+              <Col span={24}>
+                <Input
+                  type="text"
+                  name="Where are you moving to?"
+                  placeholder="Drop Off Address"
+                  value={values.dropoff || ""}
+                  onChange={handleChange}
+                />
+                <ValidationType type="dropoff" />
               </Col>
               <ButtonContainer>
                 <Button name="submit">{t("Submit")}</Button>
