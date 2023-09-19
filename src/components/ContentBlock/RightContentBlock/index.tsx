@@ -25,6 +25,9 @@ const RightBlock = ({
       behavior: "smooth",
     });
   };
+  const initiatePhoneCall = () => {
+    window.location.href = "tel:+16505159161";
+  };
   return (
     <RightBlockContainer>
       <Fade direction="right">
@@ -41,7 +44,13 @@ const RightBlock = ({
                         key={id}
                         color={item.color}
                         fixedWidth={true}
-                        onClick={() => scrollTo("about")}
+                        onClick={() => {
+                          if (item.title === "Call Now") {
+                            initiatePhoneCall();
+                          } else {
+                            scrollTo("moving");
+                          }                          
+                        }}
                       >
                         {t(item.title)}
                       </Button>
