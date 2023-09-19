@@ -1,12 +1,12 @@
 {
-  "title": "Landing page template for developers & startups",
-  "text": "Beautifully designed templates using React.js, ant design and styled-components! Save weeks of time and build your landing page in minutes.",
+  "title": "Streamlined Moving Services",
+  "text": "Welcome to Davidson Moving & Storage – your trusted partner for seamless and affordable moving experiences in the San Francisco, Bay Area. Our dedicated team is committed to providing comprehensive moving and relocation solutions tailored to your specific needs. Whether it's a residential or commercial move, local or long-distance, we handle all the logistics, ensuring a smooth transition to your new destination.",
   "button": [
     {
-      "title": "Explore"
+      "title": "About Us"
     },
     {
-      "title": "Learn more",
+      "title": "Call Now",
       "color": "#fff"
     }
   ]
