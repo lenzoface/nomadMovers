@@ -106,14 +106,6 @@ export const FooterContainer = styled("div")`
     }
   }
 
-  @media screen and (max-width: 769px) {
-    width: auto;
-
-    a:not(:last-child) {
-      display: none;
-    }
-  }
-
   div {
     cursor: pointer;
     margin-right: 15px;
@@ -124,7 +116,12 @@ export const FooterContainer = styled("div")`
       fill: rgb(255, 130, 92);
     }
   }
+
+  @media screen and (max-width: 414px) {
+    /* Adjust styles for smaller screens if necessary */
+  }
 `;
+
 
 export const Language = styled("h4")`
   font-size: 22px;
