@@ -1,15 +1,25 @@
 {
-  "title": "Light, fast & responsive",
-  "text": "This template is ready to use, so you don't need to change anything at a component level, unless you want to customize the default styling.",
+  "title": "Our Services",
+  "text": "We offer stress-free experience. Your move will be light, fast, and responsive to your needs.",
   "section": [
     {
-      "title": "Why Antd?",
-      "content": "Ant Design is a React UI library that has a lot of easy-to-use components for building elegant UI.",
+      "title": "Local and Long-Distance Moving",
+      "content": "Make your move smooth and hassle-free with our comprehensive local and long-distance moving services.",
       "icon": "notes.svg"
     },
     {
-      "title": "Why styled-components?",
-      "content": "Styled Components gives you total control over your components.",
+      "title": "Packing and Unpacking",
+      "content": "We provide expert packing and unpacking services to ensure your items are handled with care and convenience.",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "Specialized Furniture Handling",
+      "content": "Trust us to handle your valuable and unique furniture items with the utmost care and expertise during your move.",
+      "icon": "notes.svg"
+    },
+    {
+      "title": "Complex Logistics Mastery",
+      "content": "Experience our unrivaled expertise in navigating the intricacies of complex logistics to ensure your move is seamless and stress-free.",
       "icon": "notes.svg"
     }
   ]
