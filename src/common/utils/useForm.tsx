@@ -14,19 +14,26 @@ export const useForm = (validate: any) => {
     });
   };
 
-  const handleSubmit = (event: React.ChangeEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.ChangeEvent<HTMLFormElement>) => {
     event.preventDefault();
     setErrors(validate(values));
     // Your url for API
     const url = `${process.env.REACT_APP_FORMSPARK_EMAIL}`;
-    if (Object.keys(values).length >= 3) { // Проверка на заполненность как минимум 3 полей
-      axios
-        .post(url, {
+    if (Object.keys(values).length >= 3) {
+      // Проверка на заполненность как минимум 3 полей
+      await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
           ...values,
-        })
-        .then(() => {
-          setShouldSubmit(true);
-        });
+        }),
+      })
+      .then(() => {
+        setShouldSubmit(true);
+      });
     }
   };
 
@@ -35,7 +42,7 @@ export const useForm = (validate: any) => {
       setValues("");
       openNotificationWithIcon();
     }
-  }, [errors, shouldSubmit]); 
+  }, [errors, shouldSubmit]);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     event.persist();
