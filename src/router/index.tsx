@@ -5,6 +5,8 @@ import Header from "../components/Header";
 import routes from "./config";
 import { Styles } from "../styles/styles";
 
+const Reviews = lazy(() => import("../pages/Reviews/reviews"));
+
 const Router = () => {
   return (
     <Suspense fallback={null}>
@@ -21,6 +23,8 @@ const Router = () => {
             />
           );
         })}
+        {/* Добавляем новый маршрут для страницы отзывов */}
+        <Route path="/reviews" component={Reviews} />
       </Switch>
       <Footer />
     </Suspense>
