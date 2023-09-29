@@ -58,9 +58,9 @@ const Footer = ({ t }: any) => {
             <Col lg={10} md={10} sm={24} xs={24}>
               {/* <Empty /> */}
               <Language>{t("Address")}</Language>
-              <Para>449 Avenue H, Trasure Island</Para>
+              <Para>449 Avenue H</Para>
               <Para>San Francisco</Para>
-              <Para>California</Para>
+              <Para>CA 94130</Para>
               <Empty />
               <Para>Email: info.dmsmoving@gmail.com</Para>
               <Para>Phone Number: +1 650 515-9161</Para>
