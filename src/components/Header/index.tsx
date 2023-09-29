@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 import { Row, Col, Drawer } from "antd";
 import { withTranslation } from "react-i18next";
 import Container from "../../common/Container";
@@ -35,6 +36,12 @@ const Header = ({ t }: any) => {
       });
       setVisibility(false);
     };
+    const handleLinkClick = () => {
+      window.open(
+        "https://www.yelp.com/biz_photos/davidson-moving-and-storage-san-francisco",
+        "_blank"
+      );
+    };
     return (
       <>
         <CustomNavLinkSmall onClick={() => scrollTo("moving")}>
@@ -45,7 +52,15 @@ const Header = ({ t }: any) => {
         </CustomNavLinkSmall>
         <CustomNavLinkSmall onClick={() => scrollTo("pricing")}>
           <Span>{t("Pricing")}</Span>
-        </CustomNavLinkSmall>              
+        </CustomNavLinkSmall>
+        <CustomNavLinkSmall onClick={handleLinkClick}>
+          <Span>{t("Photos")}</Span>
+        </CustomNavLinkSmall>
+        <Link to="/reviews">
+                <CustomNavLinkSmall>
+                    <Span>{t("Reviews")}</Span>
+                </CustomNavLinkSmall>
+            </Link>
         <CustomNavLinkSmall
           style={{ width: "180px" }}
           onClick={() => scrollTo("contact")}
