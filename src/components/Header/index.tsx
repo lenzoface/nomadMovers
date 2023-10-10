@@ -30,11 +30,15 @@ const Header = ({ t }: any) => {
 
   const MenuItem = () => {
     const scrollTo = (id: string) => {
-      const element = document.getElementById(id) as HTMLDivElement;
-      element.scrollIntoView({
-        behavior: "smooth",
-      });
-      setVisibility(false);
+      if (window.location.pathname === "/") {
+        const element = document.getElementById(id) as HTMLDivElement;
+        element.scrollIntoView({
+          behavior: "smooth",
+        });
+        setVisibility(false);
+      } else {
+        window.location.href = `/#${id}`;
+      }
     };
     const handleLinkClick = () => {
       window.open(
