@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { Row, Col, Drawer } from "antd";
 import { withTranslation } from "react-i18next";
 import Container from "../../common/Container";
@@ -60,11 +60,11 @@ const Header = ({ t }: any) => {
         <CustomNavLinkSmall onClick={handleLinkClick}>
           <Span>{t("Photos")}</Span>
         </CustomNavLinkSmall>
-        <Link to="/reviews">
-                <CustomNavLinkSmall>
-                    <Span>{t("Reviews")}</Span>
-                </CustomNavLinkSmall>
-            </Link>
+        <CustomNavLinkSmall>
+          <Link to="/reviews" onClick={() => setVisibility(false)}>
+            <Span>{t("Reviews")}</Span>
+          </Link>
+        </CustomNavLinkSmall>
         <CustomNavLinkSmall
           style={{ width: "180px" }}
           onClick={() => scrollTo("contact")}
