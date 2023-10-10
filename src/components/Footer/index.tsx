@@ -86,6 +86,10 @@ const Footer = ({ t }: any) => {
               </LogoContainer>
             </NavLink>
             <FooterContainer>
+            <SocialLink
+                href="https://www.google.com/maps/place/Davidson+Moving+and+Storage/@37.823121,-122.368933,17z/data=!3m1!5s0x8085803267432993:0x8f26db6187afe3d2!4m8!3m7!1s0x895d986157053679:0x862d74e571769a32!8m2!3d37.823121!4d-122.368933!9m1!1b1!16s%2Fg%2F11ks2xhsbn?entry=ttu"
+                src="google.svg"
+              />
               <SocialLink
                 href="https://www.yelp.com/biz/davidson-moving-and-storage-san-francisco"
                 src="yelp.svg"
@@ -105,7 +109,7 @@ const Footer = ({ t }: any) => {
               <SocialLink
                 href="https://www.facebook.com/people/Davidson-Moving/100091916710496/"
                 src="facebook.svg"
-              />
+              />            
             </FooterContainer>
           </Row>
         </Container>
