@@ -26,7 +26,7 @@ const RightBlock = ({
     });
   };
   const initiatePhoneCall = () => {
-    window.location.href = "tel:+16505159161";
+    window.location.href = "tel:+16505477771";
   };
   return (
     <RightBlockContainer>
