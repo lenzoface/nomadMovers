@@ -14,7 +14,7 @@ interface MiddleBlock2Props {
 
 const MiddleBlock2 = ({ title, content, button, t, id }: MiddleBlock2Props) => {
   const initiateEmail = () => {
-    window.location.href = "mailto:info.dmsmoving@gmail.com";
+    window.location.href = "mailto:nomadmoversllc@gmail.com";
   };
   return (
     <MiddleBlockSection>
@@ -25,7 +25,7 @@ const MiddleBlock2 = ({ title, content, button, t, id }: MiddleBlock2Props) => {
               <h6>{t(title)}</h6>
               <Content>{t(content)}</Content>
               {button && (
-                <a href="mailto:info.dmsmoving@gmail.com">
+                <a href="mailto:nomadmoversllc@gmail.com">
                   <Button name="email" onClick={initiateEmail}>
                     {t(button)}
                   </Button>
