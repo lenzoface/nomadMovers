@@ -48,22 +48,23 @@ const Footer = ({ t }: any) => {
               <Para>
                 {t(`Do you have any questions? Feel free to reach out.`)}
               </Para>
-              <a href="mailto:info.dmsmoving@gmail.com">
+              <a href="mailto:nomadmoversllc@gmail.com">
                 <Chat>{t(`Let's Chat`)}</Chat>
               </a>
-              <a href="tel:+16505159161">
+              <a href="tel:+16505477771">
                 <Chat>{t(`Or Call Us`)}</Chat>
               </a>
             </Col>
             <Col lg={10} md={10} sm={24} xs={24}>
               {/* <Empty /> */}
               <Language>{t("Address")}</Language>
-              <Para>449 Avenue H</Para>
+              {/* <Para>35 Paloma Ave</Para> */}
               <Para>San Francisco</Para>
-              <Para>CA 94130</Para>
+              <Para>Californa, USA</Para>
+              {/* <Para>CA 94127</Para> */}
               <Empty />
-              <Para>Email: info.dmsmoving@gmail.com</Para>
-              <Para>Phone Number: +1 650 515-9161</Para>
+              <Para>Email: nomadmoversllc@gmail.com</Para>
+              <Para>Phone Number: +1 650 547-7771</Para>
             </Col>
           </Row>
         </Container>
@@ -86,28 +87,28 @@ const Footer = ({ t }: any) => {
               </LogoContainer>
             </NavLink>
             <FooterContainer>
-            <SocialLink
+            {/* <SocialLink
                 href="https://www.google.com/maps/place/Davidson+Moving+and+Storage/@37.823121,-122.368933,17z/data=!3m1!5s0x8085803267432993:0x8f26db6187afe3d2!4m8!3m7!1s0x895d986157053679:0x862d74e571769a32!8m2!3d37.823121!4d-122.368933!9m1!1b1!16s%2Fg%2F11ks2xhsbn?entry=ttu"
                 src="google.svg"
-              />
+              /> */}
               <SocialLink
-                href="https://www.yelp.com/biz/davidson-moving-and-storage-san-francisco"
+                href="https://www.yelp.com/biz/nomad-movers-llc-san-francisco"
                 src="yelp.svg"
               />
-              <SocialLink
-                href="https://web.whatsapp.com/send?phone=+16505159161"
+              {/* <SocialLink
+                href="https://web.whatsapp.com/send?phone=+16505477771"
                 src="whatsapp.svg"
-              />
-              <SocialLink
+              /> */}
+              {/* <SocialLink
                  href="https://t.me/DavidsonMoving"
                  src="telegram.svg"
-              />
+              /> */}
               <SocialLink
-                href="https://www.instagram.com/davidsonmoving/"
+                href="https://www.instagram.com/nomadmovers/"
                 src="instagram.svg"
               />
               <SocialLink
-                href="https://www.facebook.com/people/Davidson-Moving/100091916710496/"
+                href="https://www.facebook.com/people/Nomad-Movers/"
                 src="facebook.svg"
               />            
             </FooterContainer>

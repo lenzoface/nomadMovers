@@ -40,7 +40,7 @@ const Reviews = () => {
           <div style={{ width: "90%", margin: "10px" }}>
             <h3>Raphael K.</h3>
             <Content>
-              My experience with Davidson Moving went very well. The price was
+              My experience with Nomad Movers went very well. The price was
               fair and cheaper than a lot of other quotes. Took a chance by
               booking them without any reviews. But everything worked out. The
               two guys who helped me were nice and professional. They wrapped
@@ -55,7 +55,7 @@ const Reviews = () => {
             <Content>
               We needed to move some furniture out of a house and decided at the
               last minute on a Saturday afternoon to try to hire someone to help
-              us. I messaged Davidson Moving, and they responded quickly and
+              us. I messaged Nomad Movers, and they responded quickly and
               worked with me to agree on a price. They were able to come to the
               house with just a couple hours' notice, and they were ready to
               work! They quickly loaded the furniture in the truck, and then
@@ -71,25 +71,24 @@ const Reviews = () => {
           <div style={{ width: "90%", margin: "10px" }}>
             <h3>Diana K.</h3>
             <Content>
-              I cannot speak highly enough about Davidson Moving and Storage and
+              I cannot speak highly enough about Nomad Movers LLC and
               their exceptional team. Their staff exhibited remarkable expertise
               and efficiency during my recent move. From the moment they
               arrived, I could tell they were experienced professionals. Their
               packing techniques were top-notch, and they took care to secure
               even the most delicate items. Moreover, their friendly demeanor
               and positive attitude made the entire experience enjoyable. Thanks
-              to Davidson Moving and Storage my move was seamless, and I am
+              to Nomad Movers my move was seamless, and I am
               extremely satisfied with their services. If you're searching for a
               moving company that prioritizes customer satisfaction and delivers
-              outstanding results, look no further than Davidson Moving and
-              Storage!<br /><br />
+              outstanding results, look no further than Nomad Movers!<br /><br />
             </Content>
           </div>
         </div>
-        <Button>
+        {/* <Button>
           <a href="https://www.google.com/maps/place/Davidson+Moving+and+Storage/@37.823121,-122.368933,17z/data=!3m1!5s0x8085803267432993:0x8f26db6187afe3d2!4m8!3m7!1s0x895d986157053679:0x862d74e571769a32!8m2!3d37.823121!4d-122.368933!9m1!1b1!16s%2Fg%2F11ks2xhsbn?entry=ttu" style={{ color: "#FFFFFF"}} target="_blank" rel="noreferrer">Read or leave a review on Google</a>
         </Button>
-        <br /><br />
+        <br /><br /> */}
       </ContentWrapper>
     </ReviewsSection>
   );

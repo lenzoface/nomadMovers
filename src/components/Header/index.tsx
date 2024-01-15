@@ -42,7 +42,7 @@ const Header = ({ t }: any) => {
     };
     const handleLinkClick = () => {
       window.open(
-        "https://www.yelp.com/biz_photos/davidson-moving-and-storage-san-francisco",
+        "https://www.yelp.com/biz_photos/nomad-movers-llc-san-francisco",
         "_blank"
       );
     };
