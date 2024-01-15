@@ -1,5 +1,5 @@
 import { ReviewsSection, Content, ContentWrapper } from "./styles";
-import { Button } from "../../common/Button";
+// import { Button } from "../../common/Button";
 
 const Reviews = () => {
   return (
