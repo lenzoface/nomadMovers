@@ -104,7 +104,7 @@ const Footer = ({ t }: any) => {
                  src="telegram.svg"
               /> */}
               <SocialLink
-                href="https://www.instagram.com/nomadmovers/"
+                href="https://www.instagram.com/nomadmoversllc/"
                 src="instagram.svg"
               />
               <SocialLink
