@@ -87,10 +87,10 @@ const Footer = ({ t }: any) => {
               </LogoContainer>
             </NavLink>
             <FooterContainer>
-            {/* <SocialLink
-                href="https://www.google.com/maps/place/Nomad+Movers/"
+            <SocialLink
+                href="https://maps.app.goo.gl/2rHAzLzD8eEgK2CL6?g_st=iw"
                 src="google.svg"
-              /> */}
+              />
               <SocialLink
                 href="https://www.yelp.com/biz/nomad-movers-llc-san-francisco"
                 src="yelp.svg"
