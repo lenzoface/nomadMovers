@@ -42,7 +42,7 @@ const Header = ({ t }: any) => {
     };
     const handleLinkClick = () => {
       window.open(
-        "https://www.yelp.com/biz_photos/nomad-movers-llc-san-francisco",
+        "https://www.google.com/maps/uv?pb=!1s0x886dc48d48e24447%3A0xc28a89e5028eca50!5sNomad%20Movers!15sCgIgAQ&authuser=2&imagekey=!1e10!2sAF1QipPqGOPiYHTWs3hPI6-v4cMx8q6Bo3Yl9B8gVdDq",
         "_blank"
       );
     };
