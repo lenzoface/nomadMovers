@@ -1,5 +1,5 @@
 import { ReviewsSection, Content, ContentWrapper } from "./styles";
-// import { Button } from "../../common/Button";
+import { Button } from "../../common/Button";
 
 const Reviews = () => {
   return (
@@ -85,10 +85,10 @@ const Reviews = () => {
             </Content>
           </div>
         </div>
-        {/* <Button>
-          <a href="https://www.google.com/maps/place/Davidson+Moving+and+Storage/@37.823121,-122.368933,17z/data=!3m1!5s0x8085803267432993:0x8f26db6187afe3d2!4m8!3m7!1s0x895d986157053679:0x862d74e571769a32!8m2!3d37.823121!4d-122.368933!9m1!1b1!16s%2Fg%2F11ks2xhsbn?entry=ttu" style={{ color: "#FFFFFF"}} target="_blank" rel="noreferrer">Read or leave a review on Google</a>
+        <Button>
+          <a href="https://www.google.com/maps/place/Nomad+Movers/@37.7287117,-122.4687717,17z/data=!4m8!3m7!1s0x886dc48d48e24447:0xc28a89e5028eca50!8m2!3d37.7287117!4d-122.4687717!9m1!1b1!16s%2Fg%2F11ldk9d6zg?entry=ttu" style={{ color: "#FFFFFF"}} target="_blank" rel="noreferrer">Read or leave a review on Google</a>
         </Button>
-        <br /><br /> */}
+        <br /><br />
       </ContentWrapper>
     </ReviewsSection>
   );
