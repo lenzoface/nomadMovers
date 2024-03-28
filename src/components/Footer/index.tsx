@@ -11,7 +11,6 @@ import {
   Para,
   Large,
   Chat,
-  Empty,
   FooterContainer,
   Language,
 } from "./styles";
