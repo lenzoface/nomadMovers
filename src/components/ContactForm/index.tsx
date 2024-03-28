@@ -3,6 +3,8 @@ import { withTranslation } from "react-i18next";
 import { Slide, Zoom } from "react-awesome-reveal";
 import { ContactProps, ValidationTypeProps } from "./types";
 import { useForm } from "../../common/utils/useForm";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 import validate from "../../common/utils/validationRules";
 import { Button } from "../../common/Button";
 import Block from "../Block";
@@ -11,6 +13,7 @@ import TextArea from "../../common/TextArea";
 import { ContactContainer, FormGroup, Span, ButtonContainer, Chat } from "./styles";
 
 const Contact = ({ title, content, id, t }: ContactProps) => {
+  const [visible, setVisibility] = useState(false);
   const { values, errors, handleChange, handleSubmit } = useForm(
     validate
   ) as any;
@@ -31,9 +34,9 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
           <Slide direction="left">
             <Block title={title} content={content} />
             <br />
-            <a href="/agreement">
-                <Chat>{t(`Privacy Policy`)}</Chat>
-              </a>
+            <Link to="/reviews" onClick={() => setVisibility(false)}>
+            <Chat>{t("Reviews")}</Chat>
+          </Link>
           </Slide>
         </Col>
         <Col lg={12} md={12} sm={24} xs={24}>

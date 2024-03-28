@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import { useState } from "react";
 import { Row, Col } from "antd";
 import { withTranslation } from "react-i18next";
 import { SvgIcon } from "../../common/SvgIcon";
@@ -21,6 +23,7 @@ interface SocialLinkProps {
 }
 
 const Footer = ({ t }: any) => {
+  const [visible, setVisibility] = useState(false);
   const SocialLink = ({ href, src }: SocialLinkProps) => {
     return (
       <a
@@ -64,9 +67,9 @@ const Footer = ({ t }: any) => {
               <Para>Email: nomadmoversllc@gmail.com</Para>
               <Para>Phone Number: +1 650 547-7771</Para>
 
-              <a href="/agreement">
-                <Chat>{t(`Privacy Policy`)}</Chat>
-              </a>
+              <Link to="/reviews" onClick={() => setVisibility(false)}>
+            <Chat>{t("Reviews")}</Chat>
+          </Link>
             </Col>
           </Row>
         </Container>
