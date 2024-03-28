@@ -69,7 +69,7 @@ const Footer = ({ t }: any) => {
               <Para>Phone Number: +1 650 547-7771</Para>
 
               <Link to="/agreement" onClick={() => setVisibility(false)}>
-            <Chat>{t("Reviews")}</Chat>
+            <Chat>{t("Privacy Policy")}</Chat>
           </Link>
             </Col>
           </Row>
