@@ -22,7 +22,6 @@ interface SocialLinkProps {
 }
 
 const Footer = ({ t }: any) => {
-
   const SocialLink = ({ href, src }: SocialLinkProps) => {
     return (
       <a
@@ -41,8 +40,8 @@ const Footer = ({ t }: any) => {
     <>
       <FooterSection>
         <Container>
-        <Row justify="space-between">
-  <Col lg={8} md={10} sm={24} xs={24}>
+          <Row justify="space-between">
+            <Col lg={8} md={10} sm={24} xs={24}>
               <Language>{t("Contact")}</Language>
               <Large to="/">{t("Tell us everything")}</Large>
               <Para>
@@ -62,9 +61,13 @@ const Footer = ({ t }: any) => {
               <Para>San Francisco</Para>
               <Para>Californa, USA</Para>
               {/* <Para>CA 94127</Para> */}
-              <Empty />
+              <br />
               <Para>Email: nomadmoversllc@gmail.com</Para>
               <Para>Phone Number: +1 650 547-7771</Para>
+
+              <a href="/agreement">
+                <Chat>{t(`Privacy Policy`)}</Chat>
+              </a>
             </Col>
           </Row>
         </Container>
@@ -87,7 +90,7 @@ const Footer = ({ t }: any) => {
               </LogoContainer>
             </NavLink>
             <FooterContainer>
-            <SocialLink
+              <SocialLink
                 href="https://maps.app.goo.gl/2rHAzLzD8eEgK2CL6?g_st=iw"
                 src="google.svg"
               />
@@ -110,7 +113,7 @@ const Footer = ({ t }: any) => {
               <SocialLink
                 href="https://www.facebook.com/people/Nomad-Movers/"
                 src="facebook.svg"
-              />            
+              />
             </FooterContainer>
           </Row>
         </Container>
