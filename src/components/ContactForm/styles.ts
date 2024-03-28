@@ -34,3 +34,17 @@ export const ButtonContainer = styled("div")`
     padding-top: 0.75rem;
   }
 `;
+
+export const Chat = styled("p")`
+  color: #18216d;
+  max-width: fit-content;
+  border-bottom: 1px solid #18216d;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    border-bottom: 1px solid rgb(255, 130, 92);
+    color: rgb(255, 130, 92);
+  }
+`;
