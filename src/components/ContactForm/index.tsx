@@ -13,6 +13,7 @@ import TextArea from "../../common/TextArea";
 import { ContactContainer, FormGroup, Span, ButtonContainer, Chat } from "./styles";
 
 const Contact = ({ title, content, id, t }: ContactProps) => {
+  // eslint-disable-next-line
   const [visible, setVisibility] = useState(false);
   const { values, errors, handleChange, handleSubmit } = useForm(
     validate

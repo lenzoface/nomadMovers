@@ -23,6 +23,7 @@ interface SocialLinkProps {
 }
 
 const Footer = ({ t }: any) => {
+  // eslint-disable-next-line
   const [visible, setVisibility] = useState(false);
   const SocialLink = ({ href, src }: SocialLinkProps) => {
     return (
