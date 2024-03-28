@@ -68,7 +68,7 @@ const Footer = ({ t }: any) => {
               <Para>Email: nomadmoversllc@gmail.com</Para>
               <Para>Phone Number: +1 650 547-7771</Para>
 
-              <Link to="/reviews" onClick={() => setVisibility(false)}>
+              <Link to="/agreement" onClick={() => setVisibility(false)}>
             <Chat>{t("Reviews")}</Chat>
           </Link>
             </Col>

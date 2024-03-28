@@ -35,7 +35,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
           <Slide direction="left">
             <Block title={title} content={content} />
             <br />
-            <Link to="/reviews" onClick={() => setVisibility(false)}>
+            <Link to="/agreement" onClick={() => setVisibility(false)}>
             <Chat>{t("Reviews")}</Chat>
           </Link>
           </Slide>
