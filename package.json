@@ -24,9 +24,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "predeploy": "cp _redirects build/",
-    "deploy": "netlify deploy --prod",
+    "build": "react-scripts build && cp _redirects build/",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
