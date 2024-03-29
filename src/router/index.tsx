@@ -14,6 +14,9 @@ const Router = () => {
       <Styles />
       <Header />
       <Switch>
+        {/* Добавляем новый маршрут для страницы отзывов */}
+        <Route path="/reviews" component={Reviews} />
+        <Route path="/agreement" component={Agreement} />
         {routes.map((routeItem) => {
           return (
             <Route
@@ -24,9 +27,6 @@ const Router = () => {
             />
           );
         })}
-        {/* Добавляем новый маршрут для страницы отзывов */}
-        <Route path="/reviews" component={Reviews} />
-        <Route path="/agreement" component={Agreement} />
       </Switch>
       <Footer />
     </Suspense>
