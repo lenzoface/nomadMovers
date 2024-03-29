@@ -5,8 +5,8 @@ import Header from "../components/Header";
 import routes from "./config";
 import { Styles } from "../styles/styles";
 
-const Reviews = lazy(() => import("../pages/Reviews/reviews"));
-const Aggreement = lazy(() => import("../pages/Agreement/agreement"));
+import Agreement from"../pages/Agreement/agreement";
+import Reviews from"../pages/Reviews/reviews";
 
 const Router = () => {
   return (
@@ -26,7 +26,7 @@ const Router = () => {
         })}
         {/* Добавляем новый маршрут для страницы отзывов */}
         <Route path="/reviews" component={Reviews} />
-        <Route path="/agreement" component={Aggreement} />
+        <Route path="/agreement" component={Agreement} />
       </Switch>
       <Footer />
     </Suspense>

@@ -1,7 +1,7 @@
 import { ReviewsSection, Content, ContentWrapper } from "./styles";
 import { Button } from "../../common/Button";
 
-const Reviews = () => {
+const Agreement = () => {
   return (
     <ReviewsSection>
       <ContentWrapper>
@@ -96,4 +96,4 @@ const Reviews = () => {
   );
 };
 
-export default Reviews;
+export default Agreement;
